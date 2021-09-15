@@ -292,7 +292,6 @@ p.title {
 .header img {
 	height: 100%;
 	width: 100%;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .header-content {
@@ -349,15 +348,22 @@ nav li a:hover {
 	color: #111;
 }
 
-.logo {
-	width: 70px;
-	height: auto;
+.logo-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.logo img {
+.shop {
+	margin-left: 10px;
+	color: darkblue;
+	border-bottom: 1px solid #000;
+}
+
+/* .logo-container img {
 	width: 100%;
 	height: 100%;
-}
+} */
 
 .content {
 	color: #E1E1E1;
@@ -386,7 +392,6 @@ nav li a:hover {
 /* products */
 
 .products {
-	margin-top: 4%;
 	padding: 1rem;
 }
 
@@ -450,6 +455,37 @@ nav li a:hover {
 	height: 100%;
 }
 
+.card-footer {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	padding-top: 10px;
+}
+
+.prices {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.old-price {
+	font-size: 11px;
+	margin-left: 5px;
+	text-decoration: line-through;
+}
+
+.on {
+	color: green;
+}
+
+.off {
+	color: red;
+}
+
 /* first-footer */
 
 .first-footer {
@@ -510,7 +546,7 @@ footer {
 @media (max-width: 600px) {
 
 	.responsive-header {
-		height: 100vh;
+		height: 80vh;
 		text-align: center;
 		position: relative;
 		overflow: hidden;
@@ -641,13 +677,15 @@ footer {
 	}
 
 	.res-logo {
-		width: 48px;
-		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
-
-	.res-logo img {
-		width: 100%;
-		height: 100%;
+	
+	.shop {
+		margin-left: 10px;
+		color: darkblue;
+		border-bottom: 1px solid #000;
 	}
 
 	.res-content {
@@ -677,7 +715,6 @@ footer {
 	.res-content-image {
 		width: 80%;
 		margin: auto;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	}
 
 	.products {
@@ -908,22 +945,10 @@ footer {
 		margin-left: -10px;
 	}
 
-
 	footer {
 		background-color: #B8B2A6;
-		padding: 0.3rem 0;
+		padding: 0.3rem 0px 1rem;
 		overflow: hidden;
-		padding-bottom: 5rem;
-	}
-
-	.copyright a {
-	  width: 16%;
-		margin-right: 1%;
-	}
-
-	.copyright img {
-    width: 48px;
-    margin-right: 5px;
 	}
 
 	.copyright {
@@ -933,14 +958,17 @@ footer {
 		justify-content: center;
 	}
 
-	.submited-text {
-		display: none;
-		color: #fff;
-		text-align: center;
-		line-height: 1.7;
-		margin-top: 10px;
-		font-size: 12px !important;
-	}
+	.copyright a {
+		width: 16%;
+		  margin-right: 1%;
+	  }
+  
+	  .copyright span {
+		  font-size: 11px;
+		  width: 100%;
+		  text-align: center;
+	  }
+
 
 }
 
