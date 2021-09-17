@@ -1,11 +1,11 @@
 
 $(document).ready(function(){
 	$('.hamburger-menu').click(function(){
-		$('.sidebar-wrapper').addClass('show-menu')
+		$('.menu > nav > ul').addClass('show-menu')
 	})
 
 	$('.closebtn').click(function(){
-		$('.sidebar-wrapper').removeClass('show-menu')
+		$('.menu > nav > ul').removeClass('show-menu')
 	})
 
 
