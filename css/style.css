@@ -457,10 +457,92 @@ nav li a:hover {
 	justify-content: center;
 }
 
-.shop {
+.s-dropdown-menu p {
+	text-align: center;
+	font-size: .7rem;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	padding: .3rem 0;
+}
+
+.s-dropdown .shop {
 	margin-left: 10px;
 	color: darkblue;
+	border: none;
+	background-color: transparent;
 	border-bottom: 1px solid #000;
+}
+
+.s-dropdown-menu {
+	background-color: #fff;
+	padding: 0;
+	display: none;
+}
+
+.s-dropdown-menu.open {
+	display: block;
+    position: absolute;
+    width: 280px;
+    height: auto;
+    background: #fff;
+    top: 80%;
+    left: 17%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #f5f5f5;
+	transition: all 0.4s;
+}
+
+.dropdown-item:hover {
+	background-color: #f1f1f1;
+}
+
+.shop-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 0;
+}
+
+.shop-item-info {
+	display: flex;
+	align-items: center;
+}
+
+.shop-item img {
+	width: 50px;
+	height: auto;
+	margin: 0 10px;
+}
+
+.shop-item h1 {
+	font-size: .7rem;
+	text-align: right; 
+}
+
+.shop-item span {
+	font-size: .6rem;
+	text-align: right;
+	color: #999;
+}
+
+.shop-item-delete {
+	color: rgb(196, 4, 4);
+	font-size: 2rem;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.shop-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: .5rem;
+	font-size: .7rem;
 }
 
 /* .logo-container img {
@@ -472,6 +554,7 @@ nav li a:hover {
 	font-weight: bold;
 	color: #000;
 }
+
 
 .content {
 	color: #E1E1E1;
@@ -1252,5 +1335,29 @@ footer {
 		right: 5%;
 		width: 90%;
 		padding: 0.4rem 0;
+	}
+}
+
+/* contact-us page */
+
+@media (max-width: 760px) {
+	.content-items {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.content-item > a {
+		margin: 1rem 0;
+	}
+
+	#accordion .card {
+		padding: .5rem 1rem 1rem;
+	}
+
+	#accordion .btn-link:focus, #accordion .btn-link:hover {
+		max-width: 100% !important;
+		white-space: inherit !important;
+		text-align: right !important;
 	}
 }

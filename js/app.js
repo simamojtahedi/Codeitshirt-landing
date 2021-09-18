@@ -15,4 +15,17 @@ $(document).ready(function(){
 		$('.content p').css({'display' : 'none'})
 	}
 
+	$('#dropdownMenuButton').click(() => {
+		$('.s-dropdown-menu').toggleClass('open')
+	})
+
+	$('.shop-item-delete').click( function(e) {
+		$(e.target).parent().css('display' , 'none')
+	})
+
+	$('.shop-item-price').text()
+
+	for( i = 0 ; i< $('.shop-item-price').length; i++ ) {
+		console.log(i + $('.shop-item-price').text())
+	}
 })
