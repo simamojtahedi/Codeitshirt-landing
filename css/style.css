@@ -537,12 +537,17 @@ nav li a:hover {
 	padding-left: 10px;
 }
 
-.shop-footer {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+.shop-header {
+	background-color: rgb(31, 106, 141);
 	padding: .5rem;
 	font-size: .7rem;
+	text-align: center;
+	transition: all 0.4s;
+	color: #fff;
+}
+
+.shop-header:hover {
+	background-color: rgb(47, 149, 197);
 }
 
 /* .logo-container img {
@@ -1360,4 +1365,53 @@ footer {
 		white-space: inherit !important;
 		text-align: right !important;
 	}
+}
+
+
+/* shop page */
+
+.basket-item {
+	border: 1px solid #999;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 1rem 0;
+	padding: .5rem;
+}
+
+.basket-item img {
+	width: 20%;
+}
+
+.basket-item-info {
+	text-align: right;
+}
+
+.basket-item-delete {
+	font-size: 3rem;
+	text-align: left;
+	color: red;
+}
+
+.shop-item-numbers {
+	display: flex;
+	align-items: center;
+}
+
+.select-shop-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.shop-item-numbers i {
+	font-weight: 100 !important;
+	color: #999;
+	cursor: pointer;
+}
+
+.shop-item-numbers span {
+	margin: 0 .5rem;
+	font-size: 1.1rem;
 }

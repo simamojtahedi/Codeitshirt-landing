@@ -23,10 +23,16 @@ $(document).ready(function(){
 		$(e.target).parent().css('display' , 'none')
 	})
 
+	$('#plus').click(() => {
+		let value = $('#number').html()
+		value ++;
+		console.log(value)
+	})
 
-		var price = parseInt($('.shop-item-price').text())
+	$('#minus').click(() => {
+		let value = $('#number').html()
+		value -= value;
 
-		console.log(price)
+	})
 
-		$('.shopcard-price').text() = 'lls'
 })
