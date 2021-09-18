@@ -847,3 +847,304 @@ footer {
 
 
 
+
+/* product-page */
+
+.product-info {
+	min-height: 90vh;
+	padding-top: 5rem;
+}
+
+.product-image img {
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-content {
+	padding-right: 2rem;
+	position: relative;
+	padding-bottom: 4rem;
+}
+
+.product-content h2 {
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+}
+
+.product-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.product-item h6 , .select-box h6 {
+	font-weight: 100;
+	font-size: .9rem;
+}
+
+.select-box {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.select-box select {
+	min-width: 120px;
+	border: none;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	padding: 0.1rem 0.5rem;
+	outline: none;
+}
+
+.product-content h6 {
+	margin-left: 1rem;
+	min-width: 100px;
+}
+
+.product-content a {
+	background-color: seagreen;
+	width: 240px !important;
+	position: absolute;
+	bottom: 0px;
+	right: 4%;
+	padding: 0.5rem 0;
+	text-align: center;
+	border-radius: 3px;
+	color: #fff;
+	transition: all 0.4s;
+}
+
+.tab-pane {
+	padding-top: 2rem;
+}
+
+.product-exp {
+	padding: 1rem;
+	position: relative;
+	margin-bottom: 1rem;
+}
+
+.tab-pane li {
+	margin: 1rem 0;
+	position: relative;
+	padding-right: 20px;
+	font-weight: bold;
+}
+
+.tab-pane li::after {
+	content: ' ⚫️ ';
+	position: absolute;
+	right: 0;
+	top: 20%;
+	font-size: .7rem;
+}
+
+.comments {
+	padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.prev-comments {
+	text-align: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	padding-bottom: 1rem;
+}
+
+.new-comment {
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+	position: relative;
+}
+
+.new-comment h6 {
+	margin-bottom: 2rem;
+}
+
+.new-comment label {
+	font-weight: 100;
+}
+
+.new-comment a {
+	position: absolute;
+	bottom: 10px;
+	right: 1%;
+	color: #fff;
+	width: 20%;
+	padding: 0.35rem 0;
+	text-align: center;
+	font-weight: 100;
+	transition: all 0.4s;
+}
+
+.comment-container {
+	background-color: #f5f5f5;
+	padding: 1rem;
+	border: 1px solid #999;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 1rem;
+}
+
+.comment-container img {
+	width: 100px;
+	height: auto;
+}
+
+.comment-header {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+
+.comment-header h6 {
+	line-height: 1 !important;
+	margin: 5px 0;
+	color: #333;
+}
+
+.comment-header span {
+	font-size: 0.7rem;
+	color: #777;
+}
+
+.comment-content {
+	padding-top: 0.5rem;
+}
+
+.comment-content p {
+	color: #222;
+	font-size: 0.9rem;
+	text-align: right;
+}
+
+@media (max-width: 770px) {
+	.product-info {
+		min-height: 100vh;
+		padding-top: 2rem;
+		overflow: hidden;
+	}
+	
+	.product-content {
+		padding-right: 1rem;
+		padding-bottom: 4rem;
+	}
+	
+	.product-content h2 {
+		font-size: 1.1rem;
+		margin-bottom: 1rem;
+		text-align: center;
+		margin-top: 1.5rem;
+	}
+	
+	.product-item {
+		margin-bottom: 1rem;
+	}
+	
+	.select-box {
+		margin-bottom: 1rem;
+	}
+
+	.select-res {
+		position: relative;
+		padding-bottom: 1.5rem;
+	}
+
+	.select-res small {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	
+	.product-content h6 {
+		margin-left: 1rem;
+		min-width: 90px;
+	}
+	
+	.product-content a {
+		width: 90% !important;
+		bottom: 15px;
+		right: 5%;
+	}
+
+	.tab-pane {
+		padding-top: 2rem;
+	}
+
+	.product-exp .nav-link {
+		font-size: .73rem;
+		padding: 5px 5px !important;
+	}
+
+	.product-exp .nav-link .badge {
+		font-size: .7rem;
+	}
+
+	.product-exp {
+		padding: 1rem 0;
+		margin-bottom: 1rem;
+		margin-top: 2rem;
+	}
+
+	.product-exp p {
+		font-size: .75rem;
+	}
+	
+	.tab-pane li {
+		margin: 0.8rem 0;
+		font-size: .8rem;
+	}
+
+	.tab-pane li::after {
+		content: ' ⚫️ ';
+		position: absolute;
+		right: 0;
+		top: 8%;
+		font-size: .5rem;
+	}
+
+	.table td, .table th {
+		font-size: .75rem !important;
+		font-weight: 100;
+	}
+	
+	.comments {
+		padding-top: 1rem;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.comment-container {
+		padding: 1rem 0.5rem;
+		flex-direction: column;
+		margin-bottom: 1rem;
+	}
+	
+	.comment-container img {
+		width: 100px;
+		height: auto;
+	}
+	
+	.comment-header {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.comment-content {
+		padding-top: 1rem 0.5rem;
+	}
+	
+	.comment-content p {
+		font-size: 0.75rem;
+		margin-top: 0.5rem;
+	}
+
+	.new-comment a {
+		right: 5%;
+		width: 90%;
+		padding: 0.4rem 0;
+	}
+}
