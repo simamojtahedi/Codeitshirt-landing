@@ -16,17 +16,21 @@ $(document).ready(function(){
 	}
 
 	$('#dropdownMenuButton').click(() => {
-		$('.s-dropdown-menu').toggleClass('open')
+		$('#s-dropdown-menu').toggleClass('open')
 	})
 
-	$('.shop-item-delete').click( function(e) {
-		$(e.target).parent().css('display' , 'none')
+	$('.fa-trash').click( function(e) {
+		$(e.target).parent().parent().remove()
 	})
+
 
 	$('#plus').click(() => {
-		let value = $('#number').html()
-		value ++;
-		console.log(value)
+		let value = $('#s_number').text();
+		let num = parseInt($('#s_number').text())
+		num += 1 ;
+		console.log(num);
+		value === num;
+
 	})
 
 	$('#minus').click(() => {
@@ -34,5 +38,8 @@ $(document).ready(function(){
 		value -= value;
 
 	})
+
+		// $('#basket_badge').text() === $('.basket-item').length
+
 
 })

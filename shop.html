@@ -107,29 +107,74 @@
 	</header>
 
     <div class="container">
+		<div class="col-md-12 top15 bottom15 text-center"><h6> سبد خرید : </h6></div>
         <div class="row">
             <div class="col-md-8">
                 <div class="col-md-12 basket-item">
                     <img src="img/tshirt-1.png" class="img-responsive col-md-3">
                     <div class="basket-item-info col-md-5">
                         <h6> تیشرت طرح باگ یک </h6>
-                        <span class="basket-item-price">125000</span>	<span>تومان</span>
+                        <div> قیمت : <span class="basket-item-price">125000</span> تومان </div>
+						<div><span class="basket-item-color">مشکی</span></div>	
                     </div>
                     <div class="select-shop-item col-md-2">
                         <label for="select-item"> تعداد : </label>
-                           <div class="shop-item-numbers">
-                                <i class="fa fa-plus" id="plus"></i>
-                                <span id="number">1</span>
-                                <i class="fa fa-minus" id="minus"></i>
-                           </div>
+						<div class="shop-item-numbers">
+							<button id="plus"><i class="fa fa-plus"></i></button>
+							<div id="s_number">1</div>
+							<button id="minus"><i class="fa fa-minus"></i></button>
+						</div>
                     </div>
-                    <div class="basket-item-delete col-md-2">
-                        &times;
+                    <div class="shop-item-delete sh-delete col-md-2">
+                        <i class="fa fa-trash"></i>
+                    </div>
+                </div>
+				<div class="col-md-12 basket-item">
+                    <img src="img/tshirt-1.png" class="img-responsive col-md-3">
+                    <div class="basket-item-info col-md-5">
+                        <h6> تیشرت طرح باگ دو </h6>
+                        <div> قیمت : <span class="basket-item-price">125000</span> تومان </div>
+						<div><span class="basket-item-color">مشکی</span></div>	
+                    </div>
+                    <div class="select-shop-item col-md-2">
+                        <label for="select-item"> تعداد : </label>
+						<div class="shop-item-numbers">
+							<button id="plus"><i class="fa fa-plus"></i></button>
+							<div id="s_number">1</div>
+							<button id="minus"><i class="fa fa-minus"></i></button>
+						</div>
+                    </div>
+                    <div class="shop-item-delete sh-delete col-md-2">
+                        <i class="fa fa-trash"></i>
                     </div>
                 </div>
                 
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-md-4 s_basket">
+				<div class="final--items">
+					<span> سبد خرید شما </span>
+					<div class="badge" id='basket_badge'> 2 </div>
+				</div>
+				<div class="final-items">
+					<div class="final-item">
+						مجموع قیمت کالا ها:
+						<div class="final-price">
+							<span>250000</span>
+							<span> تومان </span>
+						</div>
+					</div>
+					<div class="final-item">
+						موجودی:
+						<span class="on"> موجود در انبار </span>
+					</div>
+					<div class="final-item">
+						هزینه ارسال :
+						<span>ارسال رایگان</span>
+					</div>
+
+					<a href="#"> ادامه فرایند خرید </a>
+				</div>
+			</div>
         </div>
     </div>
 
