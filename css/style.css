@@ -1709,9 +1709,26 @@ footer {
 
 
 
+/* factor page  */
 
+.factor_items {
+	border: 1px solid rgb(197, 197, 197);
+	border-radius: 4px;
+	padding: .5rem;
+}
 
+.factor-item-container {
+	padding: .5rem;
+}
 
+.factor-item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: .5rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
 
 
