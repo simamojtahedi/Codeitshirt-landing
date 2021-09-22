@@ -374,14 +374,17 @@ p.title {
 /* header */
 
 .header {
-	height: 90vh;
+	height: 102vh;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 }
+
+
 
 .header-image {
 	height: auto;
@@ -584,6 +587,13 @@ nav li a:hover {
   font-size: 0.9rem;
   margin-top: 3.5%;
 	font-size: 100 !important;
+}
+
+.more-info {
+	background: url(../img/wave.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
 }
 
 
