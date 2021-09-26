@@ -7,16 +7,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 
-	<title> Dev-shit </title>
+    <title>login</title>
 
-	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/jquery.js"></script>
+	<link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/owl.carousel.min.css">
+	<link rel="stylesheet" href="./css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script src="./js/jquery.js"></script>
 	<!-- <link rel="icon" href="images/favicon.png"> -->
-
 </head>
-<body dir="rtl">
+<body>
 
 	<header class="menu_container">
 		<div class="container-fluid">
@@ -36,7 +37,7 @@
 							<li><a href="./about-us.html">درباره ما</a></li>
 							<li><a href="./contact-us.html">تماس با ما</a></li>
 							<li><a href="./faq.html"> سوالات متداول </a></li>
-							<li><a class="login" href="./login.html"> ورود | عضویت </a></li>
+							<li  class="active_link"><a class="login" href="./login.html"> ورود | عضویت </a></li>
 						</ul>
 						<div class="logo-container">
 							<div class="hamburger-menu">
@@ -106,63 +107,53 @@
 			</div>
 		</div>
 	</header>
-
-    <div class="container">
-		<div class="col-md-12 top15 bottom15 text-center"><h6> سبد خرید : </h6></div>
-        <div class="row">
-            <div class="col-md-8">
-                <div class="col-md-12 basket-item">
-                    <img src="img/tshirt-1.png" class="img-responsive col-md-3">
-                    <div class="basket-item-info col-md-5">
-                        <h6> تیشرت طرح باگ یک </h6>
-                        <div> قیمت : <span class="basket-item-price" id="item_price">125000</span> تومان </div>
-						<div><span class="basket-item-color">مشکی</span></div>	
-                    </div>
-                    <div class="select-shop-item col-md-2">
-                        <label for="select-item"> تعداد : </label>
-						<div class="shop-item-numbers">
-							<button id="plus" onclick="addproduct()"><i class="fa fa-plus"></i></button>
-							<span id="s_number">1</span>
-							<button id="minus" onclick="reduceproduct()"><i class="fa fa-minus"></i></button>
-						</div>
-                    </div>
-                    <div class="shop-item-delete sh-delete col-md-2">
-                        <i class="fa fa-trash"></i>
-                    </div>
+    
+    <div class="login-page">
+        <div class="container">
+           <div class="lr-container">
+                <div class="register-conatiner col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1" id="register-conatiner">
+                    <h4 class="text-center bottom20"> عضویت </h4>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for=""> نام کاربری : </label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="form-group">
+                            <label for=""> ایمیل : </label>
+                            <input type="email" name="" id="" >
+                        </div>
+                        <div class="form-group">
+                            <label for=""> رمز عبور : </label>
+                            <input type="password" name="" id="">
+                        </div>
+							<input type="submit" class="btn btn-info" name="" id="" value="عضویت">
+                    </form>
+					<div class="login-btn">
+                    	قبلا عضو شده اید؟  <button id="login-btn"> ورود </button>
+					</div>
                 </div>
-                
-            </div>
-            <div class="col-md-4 s_basket">
-				<div class="final--items">
-					<span> سبد خرید شما </span>
-					<div class="badge" id='basket_badge'> 1 </div>
-				</div>
-				<div class="final-items">
-					<div class="final-item">
-						مجموع قیمت کالا ها:
-						<div class="final-price">
-							<span id="final_price">250000</span>
-							<span> تومان </span>
-						</div>
-					</div>
-					<div class="final-item">
-						موجودی:
-						<span class="on"> موجود در انبار </span>
-					</div>
-					<div class="final-item">
-						هزینه ارسال :
-						<span>ارسال رایگان</span>
-					</div>
-
-					<a href="./factor.html"> ادامه فرایند خرید </a>
-				</div>
-			</div>
+                <div class="login-conatiner col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1" id="login-conatiner">
+                    <h4 class="text-center bottom20"> ورود </h4>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for=""> نام کاربری : </label>
+                            <input type="text" name="" id="" >
+                        </div>
+                        <div class="form-group">
+                            <label for=""> رمز عبور : </label>
+                            <input type="password" name="" id="">
+                        </div>
+						<input type="submit" class="btn btn-danger" name="" id="" value="ورود">
+                    </form>
+					<div class="register-btn"> قبلا عضو نشده اید؟ <button id="register-btn"> عضویت </button></div>
+                </div>
+               
+           </div>
         </div>
     </div>
 
 
-
-	<!-- first-footer -->
+    <!-- first-footer -->
 	<br />
 	<hr />
 	<div class="first-footer">
@@ -209,38 +200,11 @@
 	</footer>
 
 
+	<script src="./js/jquery-2.2.3.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/owl.carousel.min.js"></script>
+	<script src="./js/app.js"></script>
 
-	<script src="js/jquery-2.2.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/app.js"></script>
-
-	<script>
-		let value = document.getElementById('s_number').innerText;
-		let plus = document.getElementById('plus');
-		let item_price = parseInt(document.getElementById('item_price').innerText)
-		let final_price = parseInt(document.getElementById('final_price').innerText)
-		function addproduct () {
-			value ++;
-			document.getElementById('s_number').innerText = value;
-			document.getElementById('item_price').innerHTML = item_price += item_price
-			document.getElementById('final_price').innerHTML = final_price += item_price
-		}
-
-
-		function reduceproduct () {
-			if(value > 0) {
-				value --;
-				document.getElementById('s_number').innerText = value;
-				// document.getElementById('item_price').innerHTML = item_price -= item_price
-				// document.getElementById('final_price').innerHTML = final_price -= item_price
-
-				console.log(item_price)
-
-			} else {
-				// return '0'
-			}
-		}
-	</script>
 
 
 </body>

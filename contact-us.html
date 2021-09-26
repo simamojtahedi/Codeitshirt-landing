@@ -25,18 +25,18 @@
 					<nav>
 						<ul>
 							<div class="sidebar-header">
-								<div> DEV-SHIRT </div>
+								<div> CODSHIRT </div>
 								<div class="closebtn">
 									<div></div>
 									<div></div>
 								</div>
 							</div>
-
-							<li><a href="/index.html"> صفحه اصلی </a></li>
-                            <li><a href="/products.html"> محصولات </a></li>
-							<li><a href="/about-us.html">درباره ما</a></li>
-							<li class="active_link"><a href="/contact-us.html">تماس با ما</a></li>
-							<li><a href="/faq.html"> سوالات متداول </a></li>
+							<li><a href="./index.html"> صفحه اصلی </a></li>
+							<li><a href="./products.html"> محصولات </a></li>
+							<li><a href="./about-us.html">درباره ما</a></li>
+							<li class="active_link"><a href="./contact-us.html">تماس با ما</a></li>
+							<li><a href="./faq.html"> سوالات متداول </a></li>
+							<li><a class="login" href="./login.html"> ورود | عضویت </a></li>
 						</ul>
 						<div class="logo-container">
 							<div class="hamburger-menu">
@@ -44,11 +44,60 @@
 								<div></div>
 								<div></div>
 							</div>
-							<div>
-								<a href="#" class="shop" title="سبد خرید"> <i class="fa fa-shopping-basket"></i> </a>
-								<a href="#">
+
+							<div style="display: flex;">
+								<div class="s-dropdown">
+									<button class="shop" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+										<i class="fa fa-shopping-basket"></i> 
+									</button>
+									<div class="s-dropdown-menu" id="s-dropdown-menu">
+										<div class="shop-header">
+											<span class="text-center"> سبد خرید </span> 
+										</div>										
+										<a class="dropdown-item shop-item" href="#">
+											<div class="shop-item-info">
+												<img src="img/tshirt-1.png" class="img-responsive">
+												<div>
+													<h1> تیشرت طرح باگ یک </h1>
+													<span class="shop-item-price">125000 تومان</span>
+												</div>
+											</div>
+											<div class="shop-item-delete col-md-2">
+												<i class="fa fa-trash"></i>
+											</div>
+										</a>
+										<a class="dropdown-item shop-item" href="#">
+											<div class="shop-item-info">
+												<img src="img/tshirt-1.png" class="img-responsive">
+												<div>
+													<h1> تیشرت طرح باگ دو </h1>
+													<span class="shop-item-price">125000 تومان</span>
+												</div>
+											</div>
+											<div class="shop-item-delete col-md-2">
+												<i class="fa fa-trash"></i>
+											</div>
+										</a>								    
+										<a class="dropdown-item shop-item" href="#">
+											<div class="shop-item-info">
+												<img src="img/tshirt-1.png" class="img-responsive">
+												<div>
+													<h1> تیشرت طرح باگ سه </h1>
+													<span class="shop-item-price">125000 تومان</span>
+												</div>
+											</div>
+											<div class="shop-item-delete col-md-2">
+												<i class="fa fa-trash"></i>
+											</div>
+										</a>
+
+										<div><a href="./shop.html" class="text-center see-shop"> مشاهده سبد خرید </a></div>
+
+									</div>
+								</div>
+								<a href="./index.html">
 								<!-- 	<img src="img/لوگو.png" alt="logo"> -->
-									DEV-SHIRT
+									CODSHIRT
 								</a>
 							</div>
 						</div>
@@ -61,7 +110,7 @@
     <div class="container">
         <div class="col-md-12 content-container">
             <div class="content-wrapper">
-                <h4> تماس با ما </h4>
+                <h4 class="page_title"> تماس با ما </h4>
                 <div class="content-items">
                     <div class="col-md-4 content-item">
                         <a href="#">
