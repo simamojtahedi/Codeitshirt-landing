@@ -7,15 +7,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 
-	<title> codShirt </title>
+	<title> codeitShirt </title>
 
 	<link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/owl.carousel.min.css">
 	<link rel="stylesheet" href="./css/owl.theme.default.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<script src="./js/jquery.js"></script>
-	<!-- <link rel="icon" href="images/favicon.png"> -->
+	<!-- <script src="./js/jquery.js"></script> -->
 
 </head>
 <body dir="rtl">
@@ -27,7 +26,7 @@
 					<nav>
 						<ul>
 							<div class="sidebar-header">
-								<div> CODSHIRT </div>
+								<div> CODEITSHIRT </div>
 								<div class="closebtn">
 									<div></div>
 									<div></div>
@@ -49,56 +48,11 @@
 
 							<div style="display: flex;">
 								<div class="s-dropdown">
-									<button class="shop" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+									<a href="./shop.html" class="shop" >
 										<i class="fa fa-shopping-basket"></i> 
-									</button>
-									<div class="s-dropdown-menu" id="s-dropdown-menu">
-										<div class="shop-header">
-											<span class="text-center"> سبد خرید </span> 
-										</div>										
-										<a class="dropdown-item shop-item" href="#">
-											<div class="shop-item-info">
-												<img src="img/tshirt-1.png" class="img-responsive">
-												<div>
-													<h1> تیشرت طرح باگ یک </h1>
-													<span class="shop-item-price">125000 تومان</span>
-												</div>
-											</div>
-											<div class="shop-item-delete col-md-2">
-												<i class="fa fa-trash"></i>
-											</div>
-										</a>
-										<a class="dropdown-item shop-item" href="#">
-											<div class="shop-item-info">
-												<img src="img/tshirt-1.png" class="img-responsive">
-												<div>
-													<h1> تیشرت طرح باگ دو </h1>
-													<span class="shop-item-price">125000 تومان</span>
-												</div>
-											</div>
-											<div class="shop-item-delete col-md-2">
-												<i class="fa fa-trash"></i>
-											</div>
-										</a>								    
-										<a class="dropdown-item shop-item" href="#">
-											<div class="shop-item-info">
-												<img src="img/tshirt-1.png" class="img-responsive">
-												<div>
-													<h1> تیشرت طرح باگ سه </h1>
-													<span class="shop-item-price">125000 تومان</span>
-												</div>
-											</div>
-											<div class="shop-item-delete col-md-2">
-												<i class="fa fa-trash"></i>
-											</div>
-										</a>
-
-										<div><a href="./shop.html" class="text-center see-shop"> مشاهده سبد خرید </a></div>
-
-									</div>
+									</a>
 								</div>
 								<a href="./index.html">
-								<!-- 	<img src="img/لوگو.png" alt="logo"> -->
 									CODSHIRT
 								</a>
 							</div>
@@ -141,11 +95,12 @@
     	<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h3 class="text-center"> محبوب ترین محصولات </h3>
+					<h3 class="text-right"> محبوب ترین محصولات </h3>
 				</div>
 			</div>
-      		<div class="row products-row">
-        		<div class="col-md-4 card-container">
+
+			<div class="owl-carousel owl-theme" style="direction: ltr;">
+				<div class="card-container">
 					<div class="behind-picture">
 						<div class="card">
 							<a href="./product.html" class="card-block">
@@ -155,7 +110,7 @@
 								<h6 class="card-title text-center"> تیشرت با طرح باگ </h6>
 								<div class="card-footer">
 									<div class="prices">
-										<span class="old-price">300,000 تومان</span>
+										<span class="old-price">300,000 </span>
 										<span class="price"> 290,000 تومان </span>
 									</div>
 									<span class="on"> موجود </span>
@@ -164,7 +119,7 @@
 						</div>
 					</div>
         		</div>
-				<div class="col-md-4 card-container">
+				<div class="card-container">
 					<div class="behind-picture">
 						<div class="card">
 							<a href="./product.html" class="card-block">
@@ -174,7 +129,6 @@
 								<h6 class="card-title text-center"> تیشرت با طرح باگ </h6>
 								<div class="card-footer">
 									<div class="prices">
-										<!-- <span class="old-price">300,000 تومان</span> -->
 										<span class="price"> 290,000 تومان </span>
 									</div>
 									<span class="on"> موجود </span>
@@ -183,7 +137,7 @@
 						</div>
 					</div>
         		</div>
-				<div class="col-md-4 card-container">
+				<div class="card-container">
 					<div class="behind-picture">
 						<div class="card">
 							<a href="./product.html" class="card-block">
@@ -193,7 +147,6 @@
 								<h6 class="card-title text-center"> تیشرت با طرح باگ </h6>
 								<div class="card-footer">
 									<div class="prices">
-										<!-- <span class="old-price">300,000 تومان</span> -->
 										<span class="price"> 290,000 تومان </span>
 									</div>
 									<span class="on"> موجود </span>
@@ -202,7 +155,64 @@
 						</div>
 					</div>
         		</div>
-      		</div>
+				<div class="card-container">
+					<div class="behind-picture">
+						<div class="card">
+							<a href="./product.html" class="card-block">
+								<div class="card-image">
+									<img src="img/tshirt-1.png" alt="">
+								</div>
+								<h6 class="card-title text-center"> تیشرت با طرح باگ </h6>
+								<div class="card-footer">
+									<div class="prices">
+										<span class="old-price">300,000 </span>
+										<span class="price"> 290,000 تومان </span>
+									</div>
+									<span class="on"> موجود </span>
+								</div>
+							</a>
+						</div>
+					</div>
+        		</div>
+				<div class="card-container">
+					<div class="behind-picture">
+						<div class="card">
+							<a href="./product.html" class="card-block">
+								<div class="card-image">
+									<img src="img/tshirt-1.png" alt="">
+								</div>
+								<h6 class="card-title text-center"> تیشرت با طرح باگ </h6>
+								<div class="card-footer">
+									<div class="prices">
+										<span class="old-price">300,000 </span>
+										<span class="price"> 290,000 تومان </span>
+									</div>
+									<span class="on"> موجود </span>
+								</div>
+							</a>
+						</div>
+					</div>
+        		</div>
+				<div class="card-container">
+					<div class="behind-picture">
+						<div class="card">
+							<a href="./product.html" class="card-block">
+								<div class="card-image">
+									<img src="img/tshirt-1.png" alt="">
+								</div>
+								<h6 class="card-title text-center"> تیشرت با طرح باگ </h6>
+								<div class="card-footer">
+									<div class="prices">
+										<span class="old-price">300,000 </span>
+										<span class="price"> 290,000 تومان </span>
+									</div>
+									<span class="on"> موجود </span>
+								</div>
+							</a>
+						</div>
+					</div>
+        		</div>
+			</div>
 		</div>
 	</div>
 	
@@ -237,18 +247,18 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> 
 
 	<!-- products -->
 	<div class="products padding_bottom more-info">
-		<div class="container">
+    	<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h3 class="text-center"> جدید ترین محصولات </h3>
+					<h3 class="text-right"> جدید ترین محصولات </h3>
 				</div>
 			</div>
-				<div class="row products-row">
-				<div class="col-md-4 card-container">
+			<div class="owl-carousel owl-theme" style="direction: ltr;">
+				<div class="card-container">
 					<div class="behind-picture">
 						<div class="card">
 							<a href="./product.html" class="card-block">
@@ -258,7 +268,7 @@
 								<h6 class="card-title text-center"> تیشرت با طرح باگ </h6>
 								<div class="card-footer">
 									<div class="prices">
-										<span class="old-price">300,000 تومان</span>
+										<span class="old-price">300,000 </span>
 										<span class="price"> 290,000 تومان </span>
 									</div>
 									<span class="on"> موجود </span>
@@ -266,8 +276,8 @@
 							</a>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4 card-container">
+        		</div>
+				<div class="card-container">
 					<div class="behind-picture">
 						<div class="card">
 							<a href="./product.html" class="card-block">
@@ -277,7 +287,6 @@
 								<h6 class="card-title text-center"> تیشرت با طرح باگ </h6>
 								<div class="card-footer">
 									<div class="prices">
-										<!-- <span class="old-price">300,000 تومان</span> -->
 										<span class="price"> 290,000 تومان </span>
 									</div>
 									<span class="on"> موجود </span>
@@ -285,8 +294,8 @@
 							</a>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4 card-container">
+        		</div>
+				<div class="card-container">
 					<div class="behind-picture">
 						<div class="card">
 							<a href="./product.html" class="card-block">
@@ -296,7 +305,6 @@
 								<h6 class="card-title text-center"> تیشرت با طرح باگ </h6>
 								<div class="card-footer">
 									<div class="prices">
-										<!-- <span class="old-price">300,000 تومان</span> -->
 										<span class="price"> 290,000 تومان </span>
 									</div>
 									<span class="on"> موجود </span>
@@ -304,32 +312,90 @@
 							</a>
 						</div>
 					</div>
-				</div>
-				</div>
+        		</div>
+				<div class="card-container">
+					<div class="behind-picture">
+						<div class="card">
+							<a href="./product.html" class="card-block">
+								<div class="card-image">
+									<img src="img/tshirt-1.png" alt="">
+								</div>
+								<h6 class="card-title text-center"> تیشرت با طرح باگ </h6>
+								<div class="card-footer">
+									<div class="prices">
+										<span class="old-price">300,000 </span>
+										<span class="price"> 290,000 تومان </span>
+									</div>
+									<span class="on"> موجود </span>
+								</div>
+							</a>
+						</div>
+					</div>
+        		</div>
+				<div class="card-container">
+					<div class="behind-picture">
+						<div class="card">
+							<a href="./product.html" class="card-block">
+								<div class="card-image">
+									<img src="img/tshirt-1.png" alt="">
+								</div>
+								<h6 class="card-title text-center"> تیشرت با طرح باگ </h6>
+								<div class="card-footer">
+									<div class="prices">
+										<span class="old-price">300,000 </span>
+										<span class="price"> 290,000 تومان </span>
+									</div>
+									<span class="on"> موجود </span>
+								</div>
+							</a>
+						</div>
+					</div>
+        		</div>
+				<div class="card-container">
+					<div class="behind-picture">
+						<div class="card">
+							<a href="./product.html" class="card-block">
+								<div class="card-image">
+									<img src="img/tshirt-1.png" alt="">
+								</div>
+								<h6 class="card-title text-center"> تیشرت با طرح باگ </h6>
+								<div class="card-footer">
+									<div class="prices">
+										<span class="old-price">300,000 </span>
+										<span class="price"> 290,000 تومان </span>
+									</div>
+									<span class="on"> موجود </span>
+								</div>
+							</a>
+						</div>
+					</div>
+        		</div>
+			</div>
 		</div>
 	</div>
+
 	
-	<div class="last_section">
+	<!-- <div class="last_section">
 		<div class="container">
 			<p>
 				لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی <br /> مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
-
 			</p>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- first-footer -->
 	<hr />
 	<div class="first-footer">
 		<div class="container">
-			<div class="row">
+			<div class="row ">
 				<div class="col-md-12">
 					<div class="col-md-4 footer-item">
-						<h4 class="text-right"> کُدشِرت  </h4>
+						<h4 class="text-right"> کُدایت شِرت  </h4>
 						<ul>
 							<li><a href="./products.html">محصولات</a></li>
-							<li><a href="./contact-us.html">تماس با ما</a></li>
 							<li><a href="./faq.html">سوالات متداول</a></li>
+							<li><a href="./contact-us.html">تماس با ما</a></li>
+							<li><a href="./about-us.html">درباره ما</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4 footer-item">
@@ -340,10 +406,16 @@
 						</p>
 					</div>
 					<div class="col-md-4 footer-item">
-						<div class="footer_logo"><a href="#" class="text-center"> CODSHIRT </a></div>
+						<div class="footer_logo"><a href="#" class="text-center"> CODEITSHIRT </a></div>
 						<div class="social-media">
-							<a href="#"><i class="fa fa-instagram"></i></a>
-							<a href="#"><i class="fa fa-envelope-o"></i></a>
+							<a href="#">
+								<i class="fa fa-instagram"></i>
+								<span>codeitshirt</span>
+							</a>
+							<a href="#">
+								<i class="fa fa-envelope-o"></i>
+								<span>info@codeitshirt.ir</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -359,7 +431,7 @@
 			<div class="row">
 				<div class="col-md-12 second-footer">
 					<div class="copyright">
-						<span> تمامی حقوق برای فروشگاه <a href="#"> کُدشِرت </a> محفوظ است </span>
+						<span> تمامی حقوق برای فروشگاه <a href="#"> کُدایت شِرت </a> محفوظ است </span>
 					</div>
 				</div>
 			</div>
@@ -367,12 +439,10 @@
 	</footer>
 
 
-	<script src="./js/jquery-2.2.3.js"></script>
+	<script src="./js/jquery.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/owl.carousel.min.js"></script>
+	<script src="./js/owl.carousel.js"></script>
 	<script src="./js/app.js"></script>
-
-
 
 </body>
 </html>

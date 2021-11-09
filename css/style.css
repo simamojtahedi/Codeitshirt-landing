@@ -1,6 +1,6 @@
-@import url("font/vazir.css");
+/* background-color: rgba(56, 127, 175, 1); */
 
-/*Global Styling*/
+@import url("font/vazir.css");
 
 * {
 	padding: 0;
@@ -15,12 +15,38 @@ html {
 body {
 	font-family: 'primary-font', 'segoe ui', tahoma;
 	font-size: 0.875rem;
-	background-color: #FFFFFF;
+	background-color: #FFF;
 	color: #252525;
 	position: relative;
 	direction: rtl;
 	box-sizing: border-box;
 	overflow-x: hidden !important;
+}
+
+body::after {
+	width: 250px;
+    height: 200px;
+    background: url(../img/dots.svg) no-repeat center center;
+    background-size: 220px 220px;
+    content: "";
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    z-index: -1;
+    filter: invert(1);
+}
+
+body::before {
+	width: 250px;
+    height: 200px;
+    background: url(../img/dots.svg) no-repeat center center;
+    background-size: 220px 220px;
+    content: "";
+    position: absolute;
+    bottom: 280px;
+    left: 0px;
+    z-index: -1;
+    filter: invert(1);
 }
 
 ol,
@@ -269,8 +295,9 @@ p.title {
 }
 
 .content-container {
-	min-height: 47vh;
+	min-height: 70vh;
 }
+
 
 .content-wrapper {
 	margin: 3rem 0 1rem;
@@ -288,11 +315,13 @@ p.title {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	padding: 1rem 1rem;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	background-color: #f8f8f8;
 	border-radius: 10px;
 	min-width: 200px;
+	min-height: 200px;
 	transition: all 0.4s;
 }
 
@@ -315,7 +344,7 @@ p.title {
     background-color: #fff !important;
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
     position: relative;
-    z-index: 3;
+    z-index: 1;
     border-radius: 3px;
     transition: all 0.4s;
     height: auto;
@@ -387,11 +416,10 @@ p.title {
 	right: 0%;
 	width: 42%;
 	height: 50%;
-	background-color: rgba(212, 96, 92, 0.178);
+	background-color: rgba(247, 3, 3, 0.205);
 	border-radius: 0 0 0 230px ;
 	z-index: -1;
 }
-
 
 .header::before {
 	content: '';
@@ -400,7 +428,7 @@ p.title {
 	right: 0%;
 	width: 42.5%;
 	height: 51%;
-	border-left: 1px dashed rgba(255, 0, 0, 0.719);
+	border-left: 1px dashed rgba(247, 3, 3, 0.4);
 	border-radius: 0 0 0 230px ;
 	z-index: -1;
 }
@@ -503,6 +531,7 @@ p.title {
 	z-index: 2;
 	position: relative;
 	width: 100%;
+	overflow-x: hidden;
 }
 
 .sidebar-header {
@@ -534,11 +563,22 @@ nav li {
 nav li a {
 	color: #000;
 	position: relative;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 }
 
-nav li a:hover {
-	color: #111;
+nav li a::after {
+	content: '';
+	position: absolute;
+	bottom: 25%;
+	left: 0;
+	width: 0%;
+	height: 6px;
+	background-color: rgba(255, 0, 0, 0.247);
+	transition: all .4s;
+}
+
+nav li a:hover::after {
+	width: 100%;
 }
 
 .logo-container {
@@ -557,10 +597,17 @@ nav li a:hover {
 
 .s-dropdown .shop {
 	margin-left: 10px;
-	color: rgb(28, 60, 201);
+	color: rgba(56, 127, 175, 1);
 	border: none;
 	background-color: transparent;
-	border-bottom: 1px solid #000;
+	background-color: rgba(56, 127, 175, .15);
+	padding: .3rem .5rem;
+	border-radius: 50%;
+	transition: all .4s;
+}
+
+.s-dropdown .shop:hover {
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
 
 .s-dropdown .shop i , .user-dropdown .user i {
@@ -700,10 +747,23 @@ nav li a:hover {
 }
 
 .more-info {
-	background: url(../img/Wave.svg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: bottom;
+	position: relative;
+}
+
+.more-info::after {
+	width: 250px;
+    height: 200px;
+    background: url(../img/dots.svg) no-repeat center center;
+    background-size: 220px 220px;
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    z-index: -1;
+    filter: invert(1);
 }
 
 .benefits-container {
@@ -769,7 +829,6 @@ nav li a:hover {
 	border-radius: 50%;
 }
 
-
 .benefits span {
 	margin: 1rem auto;
 	font-weight: bold;
@@ -784,8 +843,9 @@ nav li a:hover {
 /* products */
 
 .products {
-	margin: 5rem 0;
+	margin: 4rem 0;
 	padding: 0;
+	position: relative;
 }
 
 .products-row:nth-of-type(3) {
@@ -793,9 +853,10 @@ nav li a:hover {
 }
 
 .products h3 {
-	margin-bottom: 1.5%;
+	margin-bottom: 2%;
 	color: #3E3E3E;
-	font-weight: 100;
+	font-weight: bold;
+	font-size: 1.3rem;
 }
 
 .behind-picture {
@@ -816,6 +877,8 @@ nav li a:hover {
 	border-radius: 3px;
 	transition: all 0.4s;
 	height: auto;
+	direction: rtl;
+
 }
 
 .card-container:hover .behind-picture {
@@ -871,13 +934,44 @@ nav li a:hover {
 	text-decoration: line-through;
 }
 
+.price {
+	font-size: 13px;
+}
+
 .on {
 	color: green;
+	font-size: 12px;
 }
 
 .off {
 	color: red;
+	font-size: 12px;
 }
+
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    position: absolute;
+    top: -20%;
+    left: 0%;
+}
+
+.owl-theme .owl-nav button:hover {
+    background-color: transparent !important;
+}
+
+.owl-theme .owl-nav span {
+    font-size: 2.1rem !important;
+	color: #ff00009f;
+	opacity: .8 !important;
+	transition: all .4s;
+}
+
+.owl-theme .owl-nav span:hover {
+    font-size: 1.8rem;
+	color: #ff0101;
+	opacity: 1 !important;
+}
+
 
 /* first-footer */
 
@@ -917,22 +1011,38 @@ nav li a:hover {
 }
 
 .social-media {
-	width: 100%;
+	width: 50%;
+	margin: auto;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	align-items: flex-start;
 	justify-content: center;
 	color: #000;
-	font-size: 2rem;
+	font-size: .9rem;
 }
 
 .social-media a {
-	margin: 0 10px;
+	margin: 5px;
 	transition: all .4s;
+	display: flex;
+	align-items: center;
 }
-
 
 .social-media a:hover {
 	color: rgb(196, 41, 41);
+}
+
+.social-media i {
+	font-size: 1.2rem;
+	margin-left: .3rem;
+	background-color: rgba(110, 156, 209, 0.486);
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* footer */
@@ -1199,7 +1309,6 @@ footer {
 		right: 0%;
 		width: 59%;
 		height: 44%;
-		background-color: rgba(222, 184, 135, 0.342);
 		border-radius: 0 0 0 230px ;
 		z-index: -1;
 	}
@@ -1407,7 +1516,6 @@ footer {
 	color: #0956af;
 }
 
-
 /* product-page */
 
 .product-info {
@@ -1450,11 +1558,12 @@ footer {
 }
 
 .select-box select {
-	min-width: 120px;
-	border: none;
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	min-width: 180px;
+	border: 1px solid #e6e6e6;
 	padding: 0.1rem 0.5rem;
 	outline: none;
+	border-radius: 20px;
+	color: #333;
 }
 
 .product-content h6 {
@@ -1743,6 +1852,7 @@ footer {
 	justify-content: space-between;
 	margin: 1rem 0;
 	padding: .5rem;
+	background-color: #fff;
 }
 
 .basket-item img {
@@ -1766,12 +1876,14 @@ footer {
 #plus, #minus {
 	background-color: transparent;
 	border: 1px solid #e6e6e6;
-	padding: .3rem .5rem;
-	border-radius: 3px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
 	transition: all .4s;
 	display: flex;
     align-items: center;
     justify-content: center;
+	font-size: .8rem;
 }
 
 #plus:hover, #minus:hover {
@@ -1794,6 +1906,17 @@ footer {
 	background-color: #000;
 }
 
+.basket-item-size {
+	padding-top: .3rem;
+}
+
+.basket-item-size i {
+	position: relative;
+	padding-left: 1rem;
+	font-size: 1rem;
+}
+
+
 .shop-item-numbers {
 	display: flex;
 	align-items: center;
@@ -1808,7 +1931,7 @@ footer {
 
 .shop-item-numbers i {
 	font-weight: 100 !important;
-	color: #999;
+	color: rgba(56, 127, 175, 1) !important;
 	cursor: pointer;
 }
 
@@ -1831,6 +1954,7 @@ footer {
 	margin-top: 1rem;
 	padding-bottom: 4rem;
 	position: relative;
+	background-color: #fff;
 }
 
 .final--items {
@@ -1858,6 +1982,35 @@ footer {
 	border-bottom: 1px solid #f1f1f1;
 }
 
+.final-item input {
+	width: 260px;
+	border: 1px solid #dad9d9;
+	border-radius: 5px;
+	padding: .3rem .6rem;
+	outline: none;
+	font-size: .7rem;
+}
+
+.final-item textarea {
+	width: 260px;
+	min-height: 80px;
+	margin: .5rem 0;
+	border: 1px solid #dad9d9;
+	border-radius: 5px;
+	padding: .3rem .6rem;
+	outline: none;
+	font-size: .75rem;
+}
+
+.final-item input[type="radio"] {
+	width: 100px;
+	border: 1px solid #dad9d9;
+	border-radius: 5px;
+	padding: .3rem .6rem;
+	outline: none;
+	font-size: .7rem;
+}
+
 .final-price span {
 	font-weight: bold;
 }
@@ -1877,6 +2030,23 @@ footer {
 
 .s_basket a:hover {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.payment {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.payment > div {
+	width: 150px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin: 0 .3rem;
+	direction: rtl;
+	text-align: right;
+	margin: .2rem 0;
 }
 
 @media (max-width: 770px) {
@@ -2012,7 +2182,7 @@ footer {
 /* login page */
 
 .login-page {
-    min-height: 64vh;
+    min-height: 77vh;
 }
 
 .lr-container {
@@ -2026,22 +2196,36 @@ footer {
 	font-weight: 500;
 } 
 
+.loginPageLogo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.loginPageLogo img {
+	width: 70px;
+	height: auto;
+}
+
 .login-conatiner {
-	background-color: rgb(167, 63, 135);
-	color: #fff;
+	background-color: #fff;
+	color: #000;
 	position: absolute;
-	opacity: 1;
 	border-radius: 10px;
 	padding: 1rem;
+	min-height: 60vh;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .register-conatiner {
-	background-color: rgba(53, 102, 207, 0.884);
-	color: #fff;
+	background-color: #fff;
+	color: #000;
 	position: absolute;
-	opacity: 0;
 	border-radius: 10px;
 	padding: 1rem;
+	min-height: 60vh;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .lr-container form {
@@ -2051,19 +2235,20 @@ footer {
 
 .form-group label {
 	min-width: 100px !important;
+	font-weight: 100;
 }
 
 .form-group input {
 	border-radius: 20px;
-	border: 1px solid #f9f9f9;
-	padding: .2rem .6rem;
+	border: 1px solid #c4c4c4;
+	padding: .3rem .6rem;
 	outline: none;
 	transition: all .4s;
 	color: #000 !important;
 }
 
 .form-group input:focus {
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .lr-container input[type="submit"] {
@@ -2079,7 +2264,7 @@ footer {
 
 .register-btn , .login-btn {
 	position: absolute;
-	bottom: 0px;
+	bottom: 20px;
 	left: 20px;
 	font-size: .7rem;
 }
@@ -2089,12 +2274,13 @@ footer {
 	margin: 1rem auto !important;
 	border: none;
 	padding: .2rem;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid rgba(56, 127, 175, 1);
+	font-weight: bold;
+	color: rgba(56, 127, 175, 1);
 }
 
 
 @media (max-width: 760px) {
-	
 	.lr-container form {
 		margin: 3rem auto 1rem;
 		padding-bottom: 4rem;

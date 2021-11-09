@@ -25,13 +25,13 @@
 					<nav>
 						<ul>
 							<div class="sidebar-header">
-								<div> CODSHIRT </div>
+								<div> CODEITSHIRT </div>
 								<div class="closebtn">
 									<div></div>
 									<div></div>
 								</div>
 							</div>
-							<li><a href="./index.html"> صفحه اصلی </a></li>
+							<li class="active_link"><a href="./index.html"> صفحه اصلی </a></li>
 							<li><a href="./products.html"> محصولات </a></li>
 							<li><a href="./about-us.html">درباره ما</a></li>
 							<li><a href="./contact-us.html">تماس با ما</a></li>
@@ -47,56 +47,11 @@
 
 							<div style="display: flex;">
 								<div class="s-dropdown">
-									<button class="shop" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+									<a href="./shop.html" class="shop" >
 										<i class="fa fa-shopping-basket"></i> 
-									</button>
-									<div class="s-dropdown-menu" id="s-dropdown-menu">
-										<div class="shop-header">
-											<span class="text-center"> سبد خرید </span> 
-										</div>										
-										<a class="dropdown-item shop-item" href="#">
-											<div class="shop-item-info">
-												<img src="img/tshirt-1.png" class="img-responsive">
-												<div>
-													<h1> تیشرت طرح باگ یک </h1>
-													<span class="shop-item-price">125000 تومان</span>
-												</div>
-											</div>
-											<div class="shop-item-delete col-md-2">
-												<i class="fa fa-trash"></i>
-											</div>
-										</a>
-										<a class="dropdown-item shop-item" href="#">
-											<div class="shop-item-info">
-												<img src="img/tshirt-1.png" class="img-responsive">
-												<div>
-													<h1> تیشرت طرح باگ دو </h1>
-													<span class="shop-item-price">125000 تومان</span>
-												</div>
-											</div>
-											<div class="shop-item-delete col-md-2">
-												<i class="fa fa-trash"></i>
-											</div>
-										</a>								    
-										<a class="dropdown-item shop-item" href="#">
-											<div class="shop-item-info">
-												<img src="img/tshirt-1.png" class="img-responsive">
-												<div>
-													<h1> تیشرت طرح باگ سه </h1>
-													<span class="shop-item-price">125000 تومان</span>
-												</div>
-											</div>
-											<div class="shop-item-delete col-md-2">
-												<i class="fa fa-trash"></i>
-											</div>
-										</a>
-
-										<div><a href="./shop.html" class="text-center see-shop"> مشاهده سبد خرید </a></div>
-
-									</div>
+									</a>
 								</div>
 								<a href="./index.html">
-								<!-- 	<img src="img/لوگو.png" alt="logo"> -->
 									CODSHIRT
 								</a>
 							</div>
@@ -116,7 +71,8 @@
                     <div class="basket-item-info col-md-5">
                         <h6> تیشرت طرح باگ یک </h6>
                         <div> قیمت : <span class="basket-item-price" id="item_price">125000</span> تومان </div>
-						<div><span class="basket-item-color">مشکی</span></div>	
+						<div><span class="basket-item-color">مشکی</span></div>
+						<div class="basket-item-size"><span ><i class="fa fa-tag"></i>S</span></div>	
                     </div>
                     <div class="select-shop-item col-md-2">
                         <label for="select-item"> تعداد : </label>
@@ -161,20 +117,19 @@
     </div>
 
 
-
 	<!-- first-footer -->
-	<br />
 	<hr />
 	<div class="first-footer">
 		<div class="container">
-			<div class="row">
+			<div class="row ">
 				<div class="col-md-12">
 					<div class="col-md-4 footer-item">
-						<h4 class="text-right"> دو شرت  </h4>
+						<h4 class="text-right"> کُدایت شِرت  </h4>
 						<ul>
-							<li><a href="#">محصولات</a></li>
-							<li><a href="#">درباره ما</a></li>
-							<li><a href="#">تماس با ما</a></li>
+							<li><a href="./products.html">محصولات</a></li>
+							<li><a href="./faq.html">سوالات متداول</a></li>
+							<li><a href="./contact-us.html">تماس با ما</a></li>
+							<li><a href="./about-us.html">درباره ما</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4 footer-item">
@@ -184,10 +139,19 @@
 							 <br /> ارسال رایگان به سراسر کشور 
 						</p>
 					</div>
-					<div class="col-md-4 footer_logo">
-						<a href="#" class="text-center"> LOGO </a>
+					<div class="col-md-4 footer-item">
+						<div class="footer_logo"><a href="#" class="text-center"> CODEITSHIRT </a></div>
+						<div class="social-media">
+							<a href="#">
+								<i class="fa fa-instagram"></i>
+								<span>codeitshirt</span>
+							</a>
+							<a href="#">
+								<i class="fa fa-envelope-o"></i>
+								<span>info@codeitshirt.ir</span>
+							</a>
+						</div>
 					</div>
-					
 				</div>
 			</div>
 		</div>
@@ -201,16 +165,15 @@
 			<div class="row">
 				<div class="col-md-12 second-footer">
 					<div class="copyright">
-						<span> تمامی حقوق برای فروشگاه <a href="#"> دو شرت </a> محفوظ است </span>
+						<span> تمامی حقوق برای فروشگاه <a href="#"> کُدشِرت </a> محفوظ است </span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+	
 
-
-
-	<script src="js/jquery-2.2.3.js"></script>
+	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/app.js"></script>
 

@@ -1,26 +1,3 @@
-// $(document).ready(function(){
-// 	$('.owl-carousel').owlCarousel({
-// 		loop:true,
-// 		margin:10,
-// 		responsiveClass:true,
-// 		responsive:{
-// 			0:{
-// 				items:1,
-// 				nav:true
-// 			},
-// 			600:{
-// 				items:3,
-// 				nav:false
-// 			},
-// 			1000:{
-// 				items:5,
-// 				nav:true,
-// 				loop:false
-// 			}
-// 		}
-// 	})
-//   });
-
 
 $(document).ready(function(){
 	$('.hamburger-menu').click(function(){
@@ -72,31 +49,31 @@ $(document).ready(function(){
 	$('#minus').click(() => {
 		let value = $('#number').html()
 		value -= value;
-
 	})
 
 		// $('#basket_badge').text() === $('.basket-item').length
 
-
-	$('#register-btn').click(() => {
-		$('#login-conatiner').animate({
-			opacity: '0',
-		});
-		$('#register-conatiner').animate({
-			opacity: '1',
-			zIndex: '2'
-		});
-	})
-
-	$('#login-btn').click(() => {
-		$('#login-conatiner').animate({
-			opacity: '1',
-			zIndex: '2'
-		});
-		$('#register-conatiner').animate({
-			opacity: '0',
-		});
-	})
-
-
 })
+
+
+$(document).ready(function(){
+  
+	$('.owl-carousel').owlCarousel({
+		loop:true,
+		margin:10,
+		nav:true,
+		dots:false,
+		autoPlay: 1000,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:4
+			}
+		}
+	})
+	});
